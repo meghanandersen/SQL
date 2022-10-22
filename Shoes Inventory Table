@@ -1,0 +1,23 @@
+CREATE TABLE shoes (id INTEGER PRIMARY KEY, name TEXT, size INTEGER, quantity INTEGER, price INTEGER);
+
+INSERT INTO shoes VALUES(1, "Nike", 6, 2, 100);
+INSERT INTO shoes VALUES(2, "Adidas", 7, 2, 110);
+INSERT INTO shoes VALUES(3, "New Balance", 8, 2, 70);
+INSERT INTO shoes VALUES(4, "Ballet", 6, 3, 60);
+INSERT INTO shoes VALUES(5, "Chunky", 5, 4, 35);
+INSERT INTO shoes VALUES(6, "Flats", 8, 4, 10);
+INSERT INTO shoes VALUES(7, "Running", 9, 4, 99);
+INSERT INTO shoes VALUES(8, "Play", 7, 8, 25);
+INSERT INTO shoes VALUES(9, "Fila", 6, 1, 45);
+INSERT INTO shoes VALUES(10, "Flip Flops", 7, 22, 5);
+INSERT INTO shoes VALUES(11, "Puma", 5, 2, 80);
+INSERT INTO shoes VALUES(12, "Heels", 8,2, 55);
+INSERT INTO shoes VALUES(13, "Strapless", 7, 4, 68);
+INSERT INTO shoes VALUES(14, "Reebox", 7, 3, 65);
+INSERT INTO shoes VALUES(15, "Sketchers", 8, 2, 25);
+
+SELECT * FROM shoes WHERE price ORDER BY price;
+
+SELECT SUM(price) FROM shoes;
+SELECT SUM(quantity) FROM shoes;
+SELECT * FROM shoes WHERE size ORDER BY size;
